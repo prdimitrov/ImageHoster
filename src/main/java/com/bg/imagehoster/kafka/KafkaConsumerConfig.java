@@ -1,4 +1,4 @@
-package com.bg.imagehoster;
+package com.bg.imagehoster.kafka;
 
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.common.serialization.StringDeserializer;
