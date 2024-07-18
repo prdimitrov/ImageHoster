@@ -1,0 +1,10 @@
+spring:
+    application:
+        name: ImageHoster
+    kafka:
+        bootstrap-servers: localhost:9092
+        groupId: test
+        key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+        value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+server:
+    port: 8081
