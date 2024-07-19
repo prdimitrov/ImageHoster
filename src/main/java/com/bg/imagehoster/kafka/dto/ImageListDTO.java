@@ -11,5 +11,6 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ImageListDTO {
+    public String tableName;
     public List<String> imageUrls;
 }
