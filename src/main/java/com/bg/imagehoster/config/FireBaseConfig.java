@@ -1,4 +1,4 @@
-package com.bg.imagehoster.controller;
+package com.bg.imagehoster.config;
 
 import com.google.auth.oauth2.GoogleCredentials;
 import com.google.firebase.FirebaseApp;
@@ -18,10 +18,10 @@ public class FireBaseConfig {
     public FirebaseApp initializeFirebaseApp() throws IOException {
         FileInputStream serviceAccount = null;
         try {
-            serviceAccount = new FileInputStream("src/main/resources/bassheads-48d43-firebase-adminsdk-n6p6f-680a95a219.json");
+            serviceAccount = new FileInputStream("src/main/resources/yourfirebase-adminsdk.json");
             FirebaseOptions options = new FirebaseOptions.Builder()
                     .setCredentials(GoogleCredentials.fromStream(serviceAccount))
-                    .setStorageBucket("bassheads-48d43.appspot.com")
+                    .setStorageBucket("your-bucket.appspot.com")
                     .build();
 
             return FirebaseApp.initializeApp(options);
