@@ -18,10 +18,10 @@ public class FireBaseConfig {
     public FirebaseApp initializeFirebaseApp() throws IOException {
         FileInputStream serviceAccount = null;
         try {
-            serviceAccount = new FileInputStream("src/main/resources/yourfirebase-adminsdk.json");
+            serviceAccount = new FileInputStream("src/main/resources/yours-firebase-adminsdk.json");
             FirebaseOptions options = new FirebaseOptions.Builder()
                     .setCredentials(GoogleCredentials.fromStream(serviceAccount))
-                    .setStorageBucket("your-bucket.appspot.com")
+                    .setStorageBucket("yours.appspot.com")
                     .build();
 
             return FirebaseApp.initializeApp(options);
