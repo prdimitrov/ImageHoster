@@ -1,6 +1,6 @@
 package com.bg.imagehoster.kafka;
 
-import com.bg.imagehoster.controller.service.ImageCreateResponse;
+import com.bg.imagehoster.service.ImageCreateResponse;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.extern.slf4j.Slf4j;
@@ -15,6 +15,7 @@ public class ImageProducer {
     @Autowired
     private KafkaTemplate<String, String> kafkaTemplate;
     private final ObjectMapper objectMapper;
+
     public ImageProducer(ObjectMapper objectMapper) {
         this.objectMapper = objectMapper;
     }

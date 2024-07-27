@@ -1,4 +1,4 @@
-package com.bg.imagehoster.controller.service;
+package com.bg.imagehoster.service;
 
 import lombok.*;
 import org.springframework.stereotype.Component;

@@ -1,4 +1,4 @@
-package com.bg.imagehoster.controller.entity;
+package com.bg.imagehoster.model.entity;
 
 import org.springframework.stereotype.Component;
 

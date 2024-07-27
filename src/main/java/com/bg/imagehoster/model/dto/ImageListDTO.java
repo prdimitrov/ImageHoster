@@ -1,4 +1,4 @@
-package com.bg.imagehoster.kafka.dto;
+package com.bg.imagehoster.model.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.util.List;
+
 @Getter
 @Setter
 @NoArgsConstructor
